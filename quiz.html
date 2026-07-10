@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz | The Door to the World Wide Web</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/quiz.js" defer></script>
+</head>
+
+<body>
+    
+    <header id="top">
+        <h1>Quiz</h1>
+        <p>Test your knowledge of web browsers</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="modern_browsers.html">Modern Browsers</a>
+        <a href="key_concepts.html">Key Concepts</a>
+        <a href="quiz.html">Quiz</a>
+        <a href="resources.html">Resources</a>
+        <a href="about.html">About</a>
+    </nav>
+    
+    <main class="container">
+
+        <section class="intro">
+            <h2>Quiz Instructions</h2>
+            <p>
+                Complete the following questions to test your understanding
+                of web browser history, modern browsers, and key concepts.
+                This quiz contains 5 questions, each worth 20 points. A score
+                of 80% or higher is considered passing. Good luck!
+            </p>
+        </section>
+
+        <section>
+            <h2>Quiz Questions</h2>
+            <form id="quiz-form">
+                <!-- Question 1: Fill in the blank -->
+                <fieldset class="quiz-question">
+                    <legend>Question 1: Fill in the Blank</legend>
+
+                    <label for="question1">
+                        Who created the first web browser while working at CERN?
+                    </label>
+
+                    <input
+                        type="text"
+                        id="question1"
+                        name="question1"
+                        placeholder="Enter your answer"
+                        required
+                    >
+                </fieldset>
+
+                <!-- Question 2: Multiple choice -->
+                <fieldset class="quiz-question">
+                    <legend>Question 2: Multiple Choice</legend>
+
+                    <p>Why was NCSA Mosaic important to browser history?</p>
+
+                    <label>
+                        <input type="radio" name="question2" value="a" required>
+                        It was the first browser to use artificial intelligence.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="question2" value="b">
+                        It displayed pictures alongside text on webpages.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="question2" value="c">
+                        It replaced Microsoft Edge.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="question2" value="d">
+                        It was designed only for smartphones.
+                    </label>
+                </fieldset>
+
+                <!-- Question 3: Multiple choice -->
+                <fieldset class="quiz-question">
+                    <legend>Question 3: Multiple Choice</legend>
+
+                    <p>In what year was Google Chrome introduced?</p>
+
+                    <label>
+                        <input type="radio" name="question3" value="a" required>
+                        1990
+                    </label>
+
+                    <label>
+                        <input type="radio" name="question3" value="b">
+                        1998
+                    </label>
+
+                    <label>
+                        <input type="radio" name="question3" value="c">
+                        2008
+                    </label>
+
+                    <label>
+                        <input type="radio" name="question3" value="d">
+                        2020
+                    </label>
+                </fieldset>
+
+                <!-- Question 4: Multiple choice -->
+                <fieldset class="quiz-question">
+                    <legend>Question 4: Multiple Choice</legend>
+
+                    <p>What is the main purpose of the same-origin policy?</p>
+
+                    <label>
+                        <input type="radio" name="question4" value="a" required>
+                        To make webpages load faster
+                    </label>
+
+                    <label>
+                        <input type="radio" name="question4" value="b">
+                        To organize browser bookmarks
+                    </label>
+
+                    <label>
+                        <input type="radio" name="question4" value="c">
+                        To limit how one website accesses another website's data
+                    </label>
+
+                    <label>
+                        <input type="radio" name="question4" value="d">
+                        To change the appearance of a webpage
+                    </label>
+                </fieldset>
+
+                <!-- Question 5: Multiple selection -->
+                <fieldset class="quiz-question">
+                    <legend>Question 5: Select All That Apply</legend>
+
+                    <p>
+                        Which of the following are security or 
+                        privacy features supported by modern browsers?
+                    </p>
+
+                    <label>
+                        <input type="checkbox" name="question5" value="https">
+                        HTTPS support
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="question5" value="passwords">
+                        Password managers
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="question5" value="permissions">
+                        Website permission controls
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="question5" value="sharing">
+                        Automatically sharing private data with every website
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="question5" value="standards">
+                        Disabling all web standards
+                    </label>
+                </fieldset>
+
+                <!-- Form buttons -->
+                <div class="quiz-buttons">
+                    <button type="submit">Submit Quiz</button>
+                    <button type="reset" id="reset-button">Retake Quiz</button>
+                </div>
+
+            </form>
+        </section>
+
+        <section id="quiz-results" hidden>
+            <h2>Quiz Results</h2>
+            <div id="overall-result"></div>
+            <div id="question-results"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            This website is a class project for
+            <a href="https://ksuweb.github.io/IT3203/" target="_blank">IT 3203 Web Development</a>.
+        </p>
+    </footer>
+
+</body>
+</html>

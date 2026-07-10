@@ -94,3 +94,51 @@ footer {
 footer a {
     color: #ffd166;
 }
+
+/* Bold titles for the quiz questions */
+.quiz-question legend {
+    font-weight: bold;
+}
+
+/* Formating for the quiz answer choices */
+.quiz-question label {
+    display: block;
+}
+
+/* Hover effect for quiz answer choices */
+.quiz-question label:hover {
+    background-color: #d3e3fa;
+    cursor: pointer;
+}
+
+/* Correct answer result */
+.correct-result {
+    color: green;
+    background-color: #e8f5e9;
+    border: 1px solid green;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Incorrect answer result */
+.incorrect-result {
+    color: darkred;
+    background-color: #fdecea;
+    border: 1px solid darkred;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Passing result */
+.pass-result {
+    color: green;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Failing result */
+.fail-result {
+    color: darkred;
+    font-weight: bold;
+    font-size: 20px;
+}
