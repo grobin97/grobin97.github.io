@@ -9,6 +9,10 @@ body {
     background-color: #f4f6f8;
     color: #222;
     line-height: 1.6;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Styling for the title */
@@ -48,6 +52,7 @@ nav a:hover {
     background-color: white;
     padding: 25px;
     border: 1px solid black;
+    flex: 1;
 }
 
 /* Styling for the project overview */
@@ -59,7 +64,7 @@ nav a:hover {
 /* Styling for the card grid */
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(1);
+    gap: 20px;
 }
 
 /* Styling for content cards */
@@ -88,7 +93,7 @@ footer {
     background-color: #16263d;
     color: white;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: auto;
 }
 
 footer a {
@@ -141,4 +146,44 @@ footer a {
     color: darkred;
     font-weight: bold;
     font-size: 20px;
+}
+
+/* Simple browser process visualization */
+.browser-flow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.flow-box {
+    border: 1px solid #999;
+    padding: 12px;
+    background-color: #f4f6f8;
+    text-align: center;
+}
+
+.flow-arrow {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Simple table styling */
+.browser-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.browser-table th,
+.browser-table td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: left;
+}
+
+.browser-table th {
+    background-color: #1f3a5f;
+    color: white;
 }
