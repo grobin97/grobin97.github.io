@@ -187,3 +187,88 @@ footer a {
     background-color: #1f3a5f;
     color: white;
 }
+
+/* Tablet and smaller screens */
+@media screen and (max-width: 800px) {
+
+    .container {
+        width: 92%;
+        padding: 20px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    .card-grid,
+    .browser-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .browser-flow {
+        justify-content: center;
+    }
+}
+
+/* Phone-sized screens */
+@media screen and (max-width: 500px) {
+
+    #top {
+        padding: 25px 10px;
+    }
+
+    #top h1 {
+        font-size: 1.7rem;
+    }
+
+    #top p {
+        font-size: 0.95rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 4px 0;
+        padding: 8px;
+    }
+
+    .container {
+        width: auto;
+        margin: 15px 10px;
+        padding: 15px;
+    }
+
+    .browser-flow {
+        flex-direction: column;
+    }
+
+    .flow-arrow {
+        transform: rotate(90deg);
+    }
+
+    .quiz-question input[type="text"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .quiz-buttons button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Allows long links to wrap on small screens */
+a {
+    overflow-wrap: break-word;
+}
+
+/* Allows wide tables to scroll on smaller screens */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
